@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Celticmd';
+    src: url('/fonts/1216-font.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    background-color: rgb(14, 14, 43);
+    background-image: url("/images/bgpic.jpg"); 
+}
+.container{
+    margin: 0 auto;
+    padding-top: -5px;
+    min-height: 100vh;
+    max-width: 1200px;
+    background-color: rgba(23, 23, 24, 0.7);  
+}
+.header{
+    font-family: Celticmd;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 120px;
+    text-shadow: blanchedalmond 1px 0px,
+                 blanchedalmond 0px 1px,
+                 blanchedalmond -1px 0px,
+                 blanchedalmond 0px -1px;
+    color: red;
+    border-bottom-style: solid;
+}
+h1{
+    margin: 0;
+}
+
+.descr{
+    text-shadow: 0 0 10px rgb(165, 122, 130),
+                0 0 20px rgb(161, 165, 207),
+                0 0 40px rgb(155, 209, 138),
+                0 0 80px rgb(207, 207, 26),
+                0 0 160px rgb(182, 161, 121);
+    padding: 5px;
+    margin: 25px auto;
+    text-align: center;
+    color: lavenderblush;
+    text-decoration: #000;
+    font-size: 22px;
+    font-style: italic;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.btn, .clickon{
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 22px;
+    display: block;
+    height: 40px;
+    background-color: rgb(144, 207, 26);
+}
+.btn:hover{
+    transition-delay: 0.1s;
+    box-shadow: 0 0 10px rgb(144, 207, 26),
+                0 0 20px rgb(144, 207, 26),
+                0 0 40px rgb(144, 207, 26),
+                0 0 80px rgb(144, 207, 26),
+                0 0 160px rgb(144, 207, 26);
+}
+
+.cards-simple{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+max-width: 790px;
+
+}
+.cards-cross{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    max-height: 100vh;
+}
+.cards-cross2{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 4fr 1fr);
+    max-width: 1000px;
+    max-height: 100vh;
+}
+
+.cards-cross-colomn{
+    max-inline-size: 70%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.img2-cross{
+    transform: rotate(-90deg) translateX(70%);
+}
+
+.img1-cross{
+    transform: translateY(50%);
+}
+img{
+max-inline-size: 70%;
+    display:block;
+    margin: auto;
+   margin-bottom: 10px;
+    pointer-events: visible;
+    cursor: zoom-in;
+}
+.cards-cross2{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 900px;
+    max-height: 100vh;
+    margin-top: 50px;
+}
+
+
+.img1-cross2{
+    transform: translateY(-25%) translateX(-30%) rotate(45deg);
+}
+
+.img2-cross2{
+    transform: translateY(-20%) translateX(75%) rotate(-45deg) ;
+}
+.img3-cross2{
+    transform:  translateX(25%) translateY(-17%) rotate(45deg);
+}
+
+.img4-cross2{
+    transform:  translateX(-70%) translateY(-20%) rotate(-45deg);
+}
+
+.img5-cross2{
+    transform: translateY(15%) translateX(75%) rotate(45deg);
+}
+.img6-cross2{
+    transform: translateY(20%) translateX(-25%) rotate(-45deg) ;
+}
+.img7-cross2{
+    transform:  translateX(25%) translateY(17%) rotate(-45deg);
+}
+
+.img8-cross2{
+   transform:  translateX(-70%) translateY(20%) rotate(45deg);
+}
+  img:active{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 99%;
+    max-height: 99%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+  }
+
+ .card{
+     opacity:0;
+     pointer-events: none;
+ }
+  .card:active {
+      transform: none;
+  }
+
+@media (max-width:465px){
+    .btn, .descr{
+   font-size: 20px;
+    }
+}
